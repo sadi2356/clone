@@ -6,7 +6,7 @@ import getReservations from "../actions/getReservations";
 import TripsClient from "./TripsClient";
 
 export const metadata = {
-    title: 'Airbnb | Trips',
+    title: 'Urban States | Trips',
 }
 
 const TripsPage = async () => {

@@ -6,7 +6,7 @@ import getCurrentUser from "../actions/getCurrentUser"
 import getFavoriteListings from "../actions/getFavoriteListings"
 
 export const metadata = {
-    title: 'Airbnb | Favorites',
+    title: 'Urban States | Favorites',
 }
 
 const ListingPage = async () => {

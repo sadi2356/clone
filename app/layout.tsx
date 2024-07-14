@@ -14,8 +14,8 @@ import RentModal from './components/modals/RentModal';
 import SearchModal from './components/modals/SearchModal';
 
 export const metadata = {
-  title: 'Airbnb | Home',
-  description: 'Airbnb clone',
+  title: 'Urban States | Home',
+  description: 'Urban Real Estates',
   icon: {
     url: "/favicon.png",
     type: "image/png",
