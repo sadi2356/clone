@@ -114,10 +114,14 @@ const Categories = () => {
                 className="
             pt-4
             flex 
-            flex-row 
-            items-center 
-            justify-between
-            overflow-x-auto
+            flex-row
+            md:flex-col
+            items-center
+            justify-evenly
+            sm:overflow-x-scroll
+            md:overflow-y-scroll
+            shadow-2xl
+            rounded-lg
           "
             >
                 {categories.map((item) => (

@@ -12,6 +12,7 @@ import RegisterModal from './components/modals/RegisterModal';
 import LoginModal from './components/modals/LoginModal';
 import RentModal from './components/modals/RentModal';
 import SearchModal from './components/modals/SearchModal';
+import Categories from './components/navbar/Categories';
 
 export const metadata = {
   title: 'Urban States | Home',
@@ -42,7 +43,8 @@ export default async function RootLayout({ children, }: { children: React.ReactN
           <SearchModal />
           <Navbar currentUser={currentUser} />
         </ClientOnly>
-        <div className='pb-20 pt-28'>
+        <div className='pb-20 pt-28 grid grid-cols-1 md:grid-cols-[10%_90%] gap-10'>
+          <Categories />
           {children}
         </div>
       </body>
