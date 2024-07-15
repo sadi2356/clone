@@ -1,6 +1,8 @@
 "use client"
 
-import useCountries from "@/app/hooks/useCountries";
+// import useCountries from "./LocalCountrySelect";
+import useCountries from "./LocalCountrySelect";
+
 import { FC } from "react";
 
 import Select from 'react-select';
@@ -31,11 +33,11 @@ const CountrySelect: FC<CountrySelectProps> = ({ value, onChange }) => {
                 value={value}
                 onChange={(value) => onChange(value as CountrySelectValue)}
                 formatOptionLabel={(option: any) => (
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3 text-gray-700">
                         <div>{option.flag}</div>
                         <div>
                             {option.label},
-                            <span className="text-neutral-500 ml-1">{option.region}</span>
+                            <span className="text-gray-800 ml-1">{option.region}</span>
                         </div>
                     </div>
                 )}
@@ -49,8 +51,8 @@ const CountrySelect: FC<CountrySelectProps> = ({ value, onChange }) => {
                     borderRadius: 6,
                     colors: {
                         ...theme.colors,
-                        primary: "black",
-                        primary25: "#ffe4e6"
+                        primary: "#d9ded7",
+                        primary25: "#f0f0f0",
                     }
                 })}
             />

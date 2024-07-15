@@ -43,9 +43,13 @@ export default async function RootLayout({ children, }: { children: React.ReactN
           <SearchModal />
           <Navbar currentUser={currentUser} />
         </ClientOnly>
-        <div className='pb-20 pt-28 grid grid-cols-1 md:grid-cols-[10%_90%] gap-10'>
-          <Categories />
+        <div className='pb-20 pt-28 grid grid-cols-[100%] md:grid-cols-[15%_35%_50%] gap-5'>
+          <div className='col-span-1 md:col-span-1'>
+          <Categories/>
+          </div>
+          <div className='col-span-1 md:col-span-2'>
           {children}
+          </div>
         </div>
       </body>
     </html>
