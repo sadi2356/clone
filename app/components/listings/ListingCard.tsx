@@ -3,7 +3,7 @@
 import { FC, useCallback, useMemo } from "react"
 
 import { useRouter } from "next/navigation";
-import useCountries from "@/app/hooks/useCountries";
+import useCountries from "../inputs/LocalCountrySelect";
 
 import { SafeListing, SafeReservation, SafeUser } from "@/app/types";
 import { format } from "date-fns"
@@ -28,6 +28,9 @@ const ListingCard: FC<ListingCardProps> = ({ data, reservation, onAction, disabl
     const { getByValue } = useCountries();
 
     const location = getByValue(data.locationValue);
+       console.log("Data Location Value:", data.locationValue);
+    console.log("Location:", location);
+
 
     const handleCancel = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
         e.stopPropagation();
@@ -51,9 +54,8 @@ const ListingCard: FC<ListingCardProps> = ({ data, reservation, onAction, disabl
         if (!reservation) return null;
 
         const start = new Date(reservation.startDate);
-        const end = new Date(reservation.endDate)
 
-        return `${format(start, 'PP')} - ${format(end, "PP")}`
+        return `${format(start, 'PP')}`
 
     }, [reservation]);
 
@@ -85,10 +87,10 @@ const ListingCard: FC<ListingCardProps> = ({ data, reservation, onAction, disabl
                 </div>
                 <div className="flex items-center gap-1">
                     <div className="font-semibold">
-                        $ {price}
+                        Ksh {price}
                     </div>
                     {!reservation && (
-                        <div className="font-light">night</div>
+                        <div className="font-light"> / month</div>
                     )}
                 </div>
                 {onAction && actionLabel && (

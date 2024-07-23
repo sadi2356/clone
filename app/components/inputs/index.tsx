@@ -41,7 +41,7 @@ const Input: React.FC<InputProps> = ({
                 {...register(id, { required })}
                 placeholder=""
                 className={`
-                    peer w-full p-4 font-light bg-white border-2 rounded-md outline-none transition disabled:opacity-70 disabled:cursor-not-allowed ${formatPrice ? "pl-9" : "pl-4"} ${errors[id] ? "border-green-500 focus:border-green-500" : "border-neutral-300 focus:border-neutral-700"}
+                    peer w-full p-4 font-light bg-sky-200 border-2 rounded-md outline-none transition disabled:opacity-70 disabled:cursor-not-allowed ${formatPrice ? "pl-9" : "pl-4"} ${errors[id] ? "border-green-500 focus:border-green-500" : "border-neutral-300 focus:border-neutral-700"}
                 `}
             />
 

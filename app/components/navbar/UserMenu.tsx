@@ -62,7 +62,7 @@ const UserMenu: FC<UserMenuProps> = ({ currentUser }) => {
                 </div>
             </div>
             {isOpen && (
-                <div className='absolute rounded-xl shadow-md w-[40vw] md:w-3/4 bg-white overflow-hidden right-0 top-12 text-sm'>
+                <div className='absolute rounded-xl shadow-md w-[40vw] md:w-3/4 bg-sky-200 overflow-hidden right-0 top-12 text-sm'>
                     <div className='flex flex-col cursor-pointer'>
                         {!currentUser ? (
                             <>
@@ -71,7 +71,6 @@ const UserMenu: FC<UserMenuProps> = ({ currentUser }) => {
                             </>
                         ) : (
                             <>
-                                <MenuItem onClick={() => router.push("/trips")} label='My trips' />
                                 <MenuItem onClick={() => router.push("/favorites")} label='My favorites' />
                                 <MenuItem onClick={() => router.push("/reservations")} label='My reservations' />
                                 <MenuItem onClick={() => router.push("/properties")} label='My properties' />

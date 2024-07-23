@@ -1,6 +1,6 @@
 "use client"
 
-import useCountries from "@/app/hooks/useCountries";
+import useCountries from "../inputs/LocalCountrySelect";
 import { SafeUser } from "@/app/types";
 import { FC } from "react";
 import Heading from "../Heading";

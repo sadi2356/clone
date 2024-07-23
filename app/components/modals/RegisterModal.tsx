@@ -64,7 +64,7 @@ const RegisterModal = () => {
     const bodyContent = (
         <div className="flex flex-col gap-4">
             <Heading
-                title="Welcome to Urban States"
+                title="Welcome to Lease Master"
                 subtitle="Create an account!"
             />
             <Input
@@ -98,7 +98,7 @@ const RegisterModal = () => {
     const footerContent = (
         <div className="flex flex-col gap-4 mt-3">
             <hr />
-            <Button
+            {/* <Button
                 outline
                 label="Continue with Google"
                 icon={FcGoogle}
@@ -109,7 +109,7 @@ const RegisterModal = () => {
                 label="Continue with Github"
                 icon={AiFillGithub}
                 onClick={() => signIn('github')}
-            />
+            /> */}
             <div
                 className="
                 text-neutral-500 

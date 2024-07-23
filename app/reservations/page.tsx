@@ -6,7 +6,7 @@ import getReservations from "../actions/getReservations"
 import ReservationsClient from "./ReservationsClient"
 
 export const metadata = {
-    title: 'Urban States | Reservations',
+    title: 'Lease Master | Reservations',
 }
 
 const Reservations = async () => {

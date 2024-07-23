@@ -2,20 +2,20 @@
 import { KenyanCities } from "@/app/KenyanCountries";
   
   const formattedCounties = KenyanCities.map((county) => ({
-    value: county.iso2,
-    label: county.city,
-    flag: county.admin_name,
+    value: county.city,
+    label: county.admin_name,
+    flag: county.iso2,
     latlng: county.lat ? { lat: parseFloat(county.lat), lng: parseFloat(county.lng) } : null,
-    region: county.iso2,
+    region: county.city,
   }));
   
  
  const useCountries = () => {
    const getAll = () => formattedCounties;
  
-   const getByValue = (label: string) => {
-     return formattedCounties.find((item) => item.value === label);
-   }
+  const getByValue = (label: string) => {
+    return formattedCounties.find((item) => item.value === label);
+  }
  
    return {
      getAll,

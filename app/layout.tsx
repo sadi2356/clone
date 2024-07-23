@@ -15,8 +15,8 @@ import SearchModal from './components/modals/SearchModal';
 import Categories from './components/navbar/Categories';
 
 export const metadata = {
-  title: 'Urban States | Home',
-  description: 'Urban Real Estates',
+  title: 'Lease Master | Home',
+  description: 'Lease Master Estates',
   icon: {
     url: "/favicon.png",
     type: "image/png",

@@ -6,7 +6,7 @@ import PropertiesClient from "./PropertiesClient";
 import getListings from "../actions/getListings";
 
 export const metadata = {
-    title: 'Urban States | Properties',
+    title: 'Lease Master | Properties',
 }
 
 const PropertiesPage = async () => {

@@ -6,7 +6,7 @@ import getCurrentUser from "../actions/getCurrentUser"
 import getFavoriteListings from "../actions/getFavoriteListings"
 
 export const metadata = {
-    title: 'Urban States | Favorites',
+    title: 'Lease Master | Favorites',
 }
 
 const ListingPage = async () => {
