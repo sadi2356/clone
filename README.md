@@ -21,7 +21,7 @@
 1. **Clone the Repository:**
 
    ```sh
-   git clone https://github.com/yourusername/real-estate-app.git
+   git clone https://github.com/vn-vision/react_bnb_clone_cre.git
    cd real-estate-app
    ```
 
